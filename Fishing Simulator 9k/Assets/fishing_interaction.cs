@@ -4,20 +4,13 @@ using UnityEngine;
 using UnityEngine.UI; 
 public class fishing_interaction : MonoBehaviour
 {   
-    public Text scoreTExt
-    wl;gadkrgn; hjbtedjlb hgnftrm.kkn
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public Text NumberText; 
+    public Button fishButton;
+    public void ButtonAction(){
+        GenerateNumber(); 
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    private void private void OnTriggerEnter(Collider other) {
-
-        
+    public void GenerateNumber() {
+        int random_number = Random.Range(1, 9);
+        NumberText.text = random_number.ToString(); 
     }
 }
